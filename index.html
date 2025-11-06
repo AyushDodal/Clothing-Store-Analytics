@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-[Inter]">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-semibold text-blue-600">My Website</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-24 bg-gradient-to-b from-blue-50 to-white">
+    <h2 class="text-4xl font-bold mb-4">Welcome to My Website</h2>
+    <p class="text-lg text-gray-600 mb-8">Showcase your data projects, dashboards, or reports here.</p>
+    <a href="#projects" class="px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition">
+      View My Work
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-5xl mx-auto py-16 px-4">
+    <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+    <p class="text-gray-700 leading-relaxed">
+      I’m a data engineer passionate about turning raw data into meaningful insights.
+      This page showcases some of my projects and dashboards built using Python, SQL, and cloud tools.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-8 text-center">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-100 rounded-2xl shadow p-6">
+          <h4 class="text-xl font-semibold mb-2">Project 1</h4>
+          <p class="text-gray-600 mb-4">Short description of your project or dashboard.</p>
+          <a href="#" class="text-blue-600 font-medium hover:underline">View Details →</a>
+        </div>
+        <div class="bg-gray-100 rounded-2xl shadow p-6">
+          <h4 class="text-xl font-semibold mb-2">Project 2</h4>
+          <p class="text-gray-600 mb-4">Short description of your project or dashboard.</p>
+          <a href="#" class="text-blue-600 font-medium hover:underline">View Details →</a>
+        </div>
+        <div class="bg-gray-100 rounded-2xl shadow p-6">
+          <h4 class="text-xl font-semibold mb-2">Project 3</h4>
+          <p class="text-gray-600 mb-4">Short description of your project or dashboard.</p>
+          <a href="#" class="text-blue-600 font-medium hover:underline">View Details →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-5xl mx-auto py-16 px-4 text-center">
+    <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+    <p class="text-gray-700 mb-6">Want to collaborate or have a question? Let’s connect!</p>
+    <a href="mailto:yourname@email.com" class="px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition">
+      Send Email
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
