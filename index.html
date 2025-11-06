@@ -3,61 +3,100 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Clothing Retail Sales — Analytics</title>
+  <title>Clothing Retail Sales — Analytics Dashboard</title>
+
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Favicon -->
   <link rel="icon" href="favicon.png" />
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-[Inter]">
 
-  <header class="bg-white shadow-sm">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <h1 class="text-xl font-semibold text-blue-600">Clothing Retail — Sales Analytics</h1>
-      <nav class="space-x-4 text-sm">
-        <a href="/" class="hover:text-blue-600">Home</a>
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-semibold text-blue-600">Retail Sales Analytics</h1>
+      <nav class="space-x-6 text-sm">
         <a href="#dashboard" class="hover:text-blue-600">Dashboard</a>
         <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-4 py-8">
-    <section class="mb-8 text-center">
-      <h2 class="text-3xl font-bold mb-2">Sales Dashboard</h2>
-      <p class="text-gray-600">Interactive Power BI dashboard showing revenue, categories, store performance, and seasonality for the clothing retail dataset.</p>
-    </section>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-blue-50 to-white py-16 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-3">Clothing Retail — Sales Performance Dashboard</h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Explore insights into sales, customer trends, category performance, and regional growth across all stores.
+      </p>
+      <a href="#dashboard" class="px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition">
+        View Dashboard
+      </a>
+    </div>
+  </section>
 
-    <!-- Dashboard embed -->
-    <section id="dashboard" class="bg-white rounded-2xl shadow p-4">
-      <div class="mb-4 flex justify-between items-center">
-        <h3 class="text-lg font-semibold">Power BI Report</h3>
-        <a href="YOUR_PBI_REPORT_LINK" class="text-sm text-blue-600 hover:underline" target="_blank" rel="noopener">Open in Power BI</a>
-      </div>
+  <!-- Dashboard Section -->
+  <main class="max-w-7xl mx-auto px-6 py-16" id="dashboard">
+    <div class="text-center mb-10">
+      <h3 class="text-3xl font-semibold mb-3">Power BI Interactive Dashboard</h3>
+      <p class="text-gray-600">
+        A visual analysis of sales, profitability, category breakdown, and promotional impact.
+      </p>
+    </div>
 
-      <!-- Responsive iframe container -->
-      <div class="w-full" style="position:relative;padding-bottom:62.5%;height:0;overflow:hidden;border-radius:12px;">
-        <iframe
-          title="Clothing Retail Sales — Power BI"
+    <!-- Larger Power BI iframe -->
+    <div class="bg-white rounded-2xl shadow-lg p-6">
+      <div class="relative w-full" style="padding-bottom:85%; height:0; overflow:hidden; border-radius:1rem;">
+        <iframe 
+          title="Retail Sales Power BI Report"
           src="https://app.powerbi.com/reportEmbed?reportId=1440d750-55bf-4dc8-a4d0-0710d069a856&autoAuth=true&ctid=a8eec281-aaa3-4dae-ac9b-9a398b9215e7"
           allowFullScreen="true"
-          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;">
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;">
         </iframe>
       </div>
 
-      <p class="mt-3 text-sm text-gray-500">If the dashboard does not load, ensure the Publish-to-web link is correct and the report owner enabled public embedding.</p>
-    </section>
-
-    <section id="about" class="mt-8 text-gray-700">
-      <h4 class="text-lg font-semibold mb-2">About this analysis</h4>
-      <ul class="list-disc ml-5">
-        <li>Dataset: Clothing retail sales (transactions, SKUs, store, date, price, discount)</li>
-        <li>Key metrics: Revenue, gross margin, units sold, average order value, conversion by channel</li>
-        <li>Visuals: Time series, category breakdown, top SKUs, store heatmap, promotion impact</li>
-      </ul>
-    </section>
+      <div class="mt-4 text-center text-sm text-gray-500">
+        If the dashboard does not load, ensure the Power BI link is valid and public.
+      </div>
+    </div>
   </main>
 
-  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
-    <p>&copy; 2025 Your Name — Retail Analytics</p>
+  <!-- About Section -->
+  <section id="about" class="bg-white py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold mb-4 text-center">About this Analysis</h3>
+      <p class="text-gray-700 text-center max-w-3xl mx-auto leading-relaxed">
+        This dashboard analyzes <strong>sales data</strong> from a mid-sized clothing retailer to uncover key business insights such as:
+      </p>
+      <ul class="list-disc text-gray-700 mt-6 ml-8 max-w-2xl mx-auto space-y-2">
+        <li>Top-performing categories and SKUs across seasons</li>
+        <li>Store-level revenue and profit contribution</li>
+        <li>Impact of discounts and promotional campaigns</li>
+        <li>Customer purchase behavior and regional demand</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gradient-to-b from-gray-50 to-white text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+      <p class="text-gray-700 mb-6">
+        Have feedback or want to discuss this project? Feel free to reach out.
+      </p>
+      <a href="mailto:yourname@email.com" 
+         class="px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition">
+         Send Email
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center text-sm">
+    <p>&copy; 2025 Retail Analytics Dashboard | Designed by You</p>
   </footer>
 
 </body>
